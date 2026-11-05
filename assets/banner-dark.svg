@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="nick-zfc — image processing, ISP and computer vision">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080D1B"/>
+      <stop offset="52%" stop-color="#111B33"/>
+      <stop offset="100%" stop-color="#0A1020"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#FFFFFF" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <ellipse cx="1070" cy="40" rx="330" ry="260" fill="url(#glowCyan)"/>
+    <ellipse cx="820" cy="330" rx="360" ry="250" fill="url(#glowViolet)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+
+    <!-- 5x5 convolution kernel: a nod to ispalgo -->
+    <g>
+      <rect x="948" y="52" width="176" height="176" rx="14" fill="#FFFFFF" fill-opacity="0.025" stroke="#FFFFFF" stroke-opacity="0.10"/>
+      <g fill="#C7D2FE" fill-opacity="0.16">
+        <rect x="968" y="72" width="22" height="22" rx="4"/><rect x="1002" y="72" width="22" height="22" rx="4"/><rect x="1036" y="72" width="22" height="22" rx="4"/><rect x="1070" y="72" width="22" height="22" rx="4"/>
+        <rect x="968" y="106" width="22" height="22" rx="4"/><rect x="1002" y="106" width="22" height="22" rx="4"/><rect x="1036" y="106" width="22" height="22" rx="4"/><rect x="1070" y="106" width="22" height="22" rx="4"/>
+        <rect x="968" y="140" width="22" height="22" rx="4"/><rect x="1002" y="140" width="22" height="22" rx="4"/><rect x="1036" y="140" width="22" height="22" rx="4"/><rect x="1070" y="140" width="22" height="22" rx="4"/>
+        <rect x="968" y="174" width="22" height="22" rx="4"/><rect x="1002" y="174" width="22" height="22" rx="4"/><rect x="1036" y="174" width="22" height="22" rx="4"/><rect x="1070" y="174" width="22" height="22" rx="4"/>
+      </g>
+      <g fill="#818CF8" fill-opacity="0.42">
+        <rect x="1002" y="106" width="22" height="22" rx="4"/><rect x="1036" y="106" width="22" height="22" rx="4"/>
+        <rect x="1002" y="140" width="22" height="22" rx="4"/><rect x="1036" y="140" width="22" height="22" rx="4"/>
+      </g>
+      <rect x="1002" y="106" width="56" height="56" rx="6" fill="#22D3EE" fill-opacity="0.10"/>
+      <rect x="1013" y="117" width="34" height="34" rx="5" fill="#22D3EE" fill-opacity="0.85"/>
+      <text x="1030" y="139" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#06202B">K</text>
+    </g>
+
+    <circle cx="1150" cy="262" r="3" fill="#22D3EE" fill-opacity="0.7"/>
+    <circle cx="1174" cy="246" r="2" fill="#A78BFA" fill-opacity="0.8"/>
+    <circle cx="1128" cy="286" r="2" fill="#F472B6" fill-opacity="0.6"/>
+
+    <!-- signal waves -->
+    <path d="M -20 292 C 60 292, 100 266, 180 266 S 300 310, 390 310 S 510 260, 600 260 S 720 306, 810 306 S 930 266, 1020 266 S 1140 300, 1220 300" fill="none" stroke="url(#line)" stroke-opacity="0.55" stroke-width="2"/>
+    <path d="M -20 306 C 90 306, 130 278, 230 278 S 370 316, 470 316 S 610 272, 710 272 S 850 312, 950 312 S 1080 278, 1220 278" fill="none" stroke="url(#line)" stroke-opacity="0.22" stroke-width="1.5"/>
+
+    <text x="72" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="4.5" fill="#7DD3FC">NICK-ZFC  /  GITHUB PROFILE</text>
+    <text x="70" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="64" font-weight="800" letter-spacing="-1.5" fill="url(#title)">Hi, I&#39;m Nick.</text>
+    <text x="72" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="400" fill="#A5B4CF">Building small, sharp tools for image processing, ISP and beyond.</text>
+
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.2">
+      <rect x="72" y="222" width="96" height="32" rx="16" fill="#22D3EE" fill-opacity="0.10" stroke="#22D3EE" stroke-opacity="0.45"/>
+      <text x="120" y="243" text-anchor="middle" fill="#67E8F9">PYTHON</text>
+      <rect x="178" y="222" width="102" height="32" rx="16" fill="#818CF8" fill-opacity="0.10" stroke="#818CF8" stroke-opacity="0.45"/>
+      <text x="229" y="243" text-anchor="middle" fill="#A5B4FC">OPENCV</text>
+      <rect x="290" y="222" width="172" height="32" rx="16" fill="#F472B6" fill-opacity="0.09" stroke="#F472B6" stroke-opacity="0.40"/>
+      <text x="376" y="243" text-anchor="middle" fill="#F9A8D4">COMPUTER VISION</text>
+    </g>
+
+    <rect x="0" y="317" width="1200" height="3" fill="url(#line)"/>
+    <rect x="0.5" y="0.5" width="1199" height="319" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  </g>
+</svg>
